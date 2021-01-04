@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'constants/constants.dart';
 
+import 'package:helloworld/projects/whatsApp/preview.dart';
+
 class Chats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -33,11 +35,19 @@ class ChatsContainer extends StatelessWidget {
                     child: Column(
                       children: [
                         ListTile(
-                          leading: CircleAvatar(
-                            backgroundColor: Colors.black,
-                            radius: 30,
-                            backgroundImage:
-                                NetworkImage('${chatList[index]['imgurl']}'),
+                          leading: GestureDetector(
+                            onTap: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (_) {
+                                return Preview('${chatList[index]['imgurl']}');
+                              }));
+                            },
+                            child: CircleAvatar(
+                              backgroundColor: Colors.black,
+                              radius: 30,
+                              backgroundImage:
+                                  NetworkImage('${chatList[index]['imgurl']}'),
+                            ),
                           ),
                           title: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,

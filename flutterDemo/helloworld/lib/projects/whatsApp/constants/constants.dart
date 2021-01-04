@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Constants {
   List chatList = [
     {
@@ -215,50 +217,108 @@ class Constants {
     {
       'name': 'Sridhar',
       'imgurl':
-          'https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+          'https://images.unsplash.com/photo-1573393604794-f41cd02f95d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbiUyMG9uJTIwYmVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
       'time': '1',
+      'stories': [
+        {
+          'type': 'image',
+          'value':
+              'https://images.unsplash.com/photo-1573393604794-f41cd02f95d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbiUyMG9uJTIwYmVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
+          'color': Colors.red,
+          'caption': 'Beach DAY!!'
+        },
+        {
+          'type': 'text',
+          'value': 'Happy new year',
+          'color': Colors.blue,
+          'caption': 'Holaa ppl'
+        },
+        {
+          'type': 'image',
+          'value':
+              'https://www.treebo.com/blog/wp-content/uploads/2017/05/Things-to-do-in-Goa-at-night_1-1024x683.jpg',
+          'color': Colors.red,
+          'caption': 'Night Life in GOA'
+        }
+      ]
     },
     {
-      'name': 'Vishnu',
+      'name': 'Akhil',
       'imgurl':
-          'https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80',
-      'time': '5',
+          'https://images.unsplash.com/photo-1473172707857-f9e276582ab6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwbmF0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80',
+      'time': '1',
+      'stories': [
+        {
+          'type': 'image',
+          'value':
+              'https://images.unsplash.com/photo-1473172707857-f9e276582ab6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwbmF0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80',
+          'color': Colors.red,
+          'caption': 'LOVE'
+        },
+        {
+          'type': 'image',
+          'value':
+              'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZSUyMG5hdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+          'color': Colors.red,
+          'caption': 'YOLO'
+        }
+      ]
     },
     {
-      'name': 'Kennedy joi',
+      'name': 'Jhonny',
       'imgurl':
-          'https://images.unsplash.com/photo-1495216875107-c6c043eb703f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      'time': '7',
-    },
-    {
-      'name': 'Bunny bugzz',
-      'imgurl':
-          'https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      'time': '3',
-    },
-    {
-      'name': 'Homie',
-      'imgurl':
-          'https://images.unsplash.com/photo-1553267751-1c148a7280a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      'time': '4',
+          'https://www.popcornoncouch.com/wp-content/uploads/2016/05/cinemaaudience.jpg',
+      'time': '1',
+      'stories': [
+        {
+          'type': 'image',
+          'value':
+              'https://www.popcornoncouch.com/wp-content/uploads/2016/05/cinemaaudience.jpg',
+          'color': Colors.red,
+          'caption': 'Movie time'
+        },
+        {
+          'type': 'image',
+          'value':
+              'https://media-cdn.tripadvisor.com/media/photo-s/15/b2/57/3e/amb-cinemas.jpg',
+          'color': Colors.red,
+          'caption': 'Interval things'
+        },
+        {
+          'type': 'text',
+          'value': 'It was a great movie',
+          'color': Colors.grey,
+          'caption': 'Holaa ppl'
+        },
+      ]
     },
     {
       'name': 'Mark bro',
       'imgurl':
-          'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80',
-      'time': '5',
-    },
-    {
-      'name': 'Mary Winston',
-      'imgurl':
-          'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1027&q=80',
-      'time': '5',
-    },
-    {
-      'name': 'Vikky Mams',
-      'imgurl':
-          'https://images.unsplash.com/photo-1584799235813-aaf50775698c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      'time': '9',
-    },
+          'https://cars.usnews.com/pics/size/640x420/static/images/article/202006/128503/216702_New_Volvo_XC40_-_exterior_640x420.jpg',
+      'time': '1',
+      'stories': [
+        {
+          'type': 'image',
+          'value':
+              'https://cars.usnews.com/pics/size/640x420/static/images/article/202006/128503/216702_New_Volvo_XC40_-_exterior_640x420.jpg',
+          'color': Colors.red,
+          'caption': 'Love this'
+        },
+        {
+          'type': 'image',
+          'value':
+              'https://carinmylife.com/wp-content/uploads/2020/07/cautofotoToyota-Corolla-Skoda-Octavia-twin-test-2-678x381.jpg',
+          'color': Colors.red,
+          'caption': 'Ride day'
+        },
+        {
+          'type': 'text',
+          'value': 'Had a great day',
+          'color': Colors.pink,
+          'caption': 'Holaa ppl'
+        }
+      ]
+    }
   ];
 }

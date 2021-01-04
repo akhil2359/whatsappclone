@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'package:image_picker/image_picker.dart';
 
 class EditProfile extends StatelessWidget {
   Widget build(context) {
@@ -12,7 +14,7 @@ class EditProfile extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: EditProfileState(),
+      body: EditProfileBody(),
     );
   }
 }
@@ -21,7 +23,28 @@ final primaryColor = Color(0xFFF1C1C1E);
 
 final textColor = Color(0xFFF9C9C9E);
 
-class EditProfileState extends StatelessWidget {
+class EditProfileBody extends StatefulWidget {
+  @override
+  _EditProfileBodyState createState() => _EditProfileBodyState();
+}
+
+class _EditProfileBodyState extends State<EditProfileBody> {
+  File _image;
+  final picker = ImagePicker();
+
+  Future getImage(isCamera) async {
+    final pickedFile = await picker.getImage(
+        source: isCamera ? ImageSource.camera : ImageSource.gallery);
+
+    setState(() {
+      if (pickedFile != null) {
+        _image = File(pickedFile.path);
+      } else {
+        print('No image selected.');
+      }
+    });
+  }
+
   Widget build(context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,10 +60,13 @@ class EditProfileState extends StatelessWidget {
               Row(
                 children: [
                   CircleAvatar(
-                      radius: 30.0,
-                      backgroundColor: primaryColor,
-                      backgroundImage: NetworkImage(
-                          'https://www.celebritysecrets.in/images/blog/c1-Gole-Dayakar.jpg')),
+                    radius: 30.0,
+                    backgroundColor: primaryColor,
+                    backgroundImage: _image != null
+                        ? FileImage(_image)
+                        : NetworkImage(
+                            'https://www.celebritysecrets.in/images/blog/c1-Gole-Dayakar.jpg'),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
@@ -69,9 +95,14 @@ class EditProfileState extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.fromLTRB(14, 7, 0, 0),
-                child: Text(
-                  'Edit',
-                  style: TextStyle(color: Color(0xFFF25A9FA), fontSize: 12),
+                child: GestureDetector(
+                  onTap: () {
+                    getImage(true);
+                  },
+                  child: Text(
+                    'Edit',
+                    style: TextStyle(color: Color(0xFFF25A9FA), fontSize: 12),
+                  ),
                 ),
               ),
               CustomDivider(),

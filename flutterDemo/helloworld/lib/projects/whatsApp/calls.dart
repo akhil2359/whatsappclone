@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'constants/constants.dart';
 
+import 'package:helloworld/projects/whatsApp/preview.dart';
+
 class Calls extends StatefulWidget {
   @override
   _CallsState createState() => _CallsState();
@@ -105,11 +107,19 @@ class _CallsState extends State<Calls> {
                     child: Column(
                       children: [
                         ListTile(
-                          leading: CircleAvatar(
-                            backgroundColor: Colors.black,
-                            radius: 25,
-                            backgroundImage:
-                                NetworkImage('${callsList[index]['imgurl']}'),
+                          leading: GestureDetector(
+                            onTap: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (_) {
+                                return Preview('${callsList[index]['imgurl']}');
+                              }));
+                            },
+                            child: CircleAvatar(
+                              backgroundColor: Colors.black,
+                              radius: 25,
+                              backgroundImage:
+                                  NetworkImage('${callsList[index]['imgurl']}'),
+                            ),
                           ),
                           title: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,

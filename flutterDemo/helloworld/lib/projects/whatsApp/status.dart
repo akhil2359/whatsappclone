@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants/constants.dart';
+import 'package:helloworld/projects/whatsApp/story.dart';
 
 final primaryColor = Color(0xFFF1D1D1F);
 List statusList = new Constants().statusList;
@@ -30,7 +31,8 @@ class Status extends StatelessWidget {
               child: Column(
                 children: [
                   for (var item in statusList)
-                    StatusItem(item['name'], item['time'], item['imgurl'])
+                    StatusItem(item['name'], item['time'], item['imgurl'],
+                        item['stories'])
                 ],
               ),
             ),
@@ -139,45 +141,54 @@ class StatusItem extends StatelessWidget {
   final String name;
   final String time;
   final String imgurl;
-  StatusItem(this.name, this.time, this.imgurl);
+  final List stories;
+  StatusItem(this.name, this.time, this.imgurl, this.stories);
 
   Widget build(context) {
-    return Column(
-      children: [
-        Container(
-          padding: EdgeInsets.all(14),
-          color: primaryColor,
-          width: double.infinity,
-          child: Row(
-            children: [
-              CircleAvatar(
-                  radius: 25.0,
-                  backgroundColor: primaryColor,
-                  backgroundImage: NetworkImage('$imgurl')),
-              SizedBox(
-                width: 15,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text('$name',
-                      style: TextStyle(color: Colors.white, fontSize: 15)),
-                  SizedBox(
-                    height: 3,
-                  ),
-                  Text('${time}h ago',
-                      style: TextStyle(color: Colors.white60, fontSize: 14))
-                ],
-              ),
-            ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (_) {
+          return Story(stories);
+        }));
+      },
+      child: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.all(14),
+            color: primaryColor,
+            width: double.infinity,
+            child: Row(
+              children: [
+                CircleAvatar(
+                    radius: 25.0,
+                    backgroundColor: primaryColor,
+                    backgroundImage: NetworkImage('$imgurl')),
+                SizedBox(
+                  width: 15,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text('$name',
+                        style: TextStyle(color: Colors.white, fontSize: 15)),
+                    SizedBox(
+                      height: 3,
+                    ),
+                    Text('${time}h ago',
+                        style: TextStyle(color: Colors.white60, fontSize: 14))
+                  ],
+                ),
+              ],
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 75.0),
-          child: Divider(height: 0.2, thickness: 0.2, color: Color(0xFFD4D4D7)),
-        )
-      ],
+          Padding(
+            padding: const EdgeInsets.only(left: 75.0),
+            child:
+                Divider(height: 0.2, thickness: 0.2, color: Color(0xFFD4D4D7)),
+          )
+        ],
+      ),
     );
   }
 }
