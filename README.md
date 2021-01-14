@@ -7,7 +7,7 @@ A Whatsapp clone using Flutter and Dart.
 1. CHATS 
 2. CALLS
 3. STATUS
-4. CAMERA
+4. CAMERA (Update profile picture using both camera and image picker)
 5. SETTINGS
 6. EDIT PROFILE
 7. IMAGE PREVIEW
