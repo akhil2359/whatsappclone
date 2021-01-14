@@ -1,5 +1,7 @@
 ### WHATSAPP IOS CLONE (DARK MODE)
 
+A Whatsapp clone using Flutter and Dart.
+
 **FEATURES**
 
 1. CHATS 
