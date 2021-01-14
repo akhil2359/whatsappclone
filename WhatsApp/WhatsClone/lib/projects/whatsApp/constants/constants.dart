@@ -75,7 +75,7 @@ class Constants {
           'https://static.wikia.nocookie.net/dark-netflix/images/8/81/Profile_-_Claudia_1986.JPG/revision/latest?cb=20180120101235'
     },
     {
-      'name': 'Michael',
+      'name': 'Sri',
       'text': 'Good Morning!',
       'time': 'Friday',
       'seen': null,
