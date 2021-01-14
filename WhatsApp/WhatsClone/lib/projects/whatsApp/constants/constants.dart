@@ -319,6 +319,34 @@ class Constants {
           'caption': 'Holaa ppl'
         }
       ]
+    },
+    {
+      'name': 'Jonas',
+      'imgurl':
+          'https://www.india.com/wp-content/uploads/2018/08/Bangalore-Airport-haunted-1.jpg',
+      'time': '1',
+      'stories': [
+        {
+          'type': 'image',
+          'value':
+              'https://www.india.com/wp-content/uploads/2018/08/Bangalore-Airport-haunted-1.jpg',
+          'color': Colors.red,
+          'caption': 'Hi Bangalore'
+        },
+        {
+          'type': 'image',
+          'value':
+              'https://i.pinimg.com/originals/01/00/17/0100171c77b82915b9b0f691f7b61005.jpg',
+          'color': Colors.red,
+          'caption': 'Off to Cochi'
+        },
+        {
+          'type': 'text',
+          'value': 'Reached',
+          'color': Colors.black,
+          'caption': ''
+        }
+      ]
     }
   ];
 }
