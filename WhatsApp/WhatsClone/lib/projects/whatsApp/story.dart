@@ -25,15 +25,6 @@ class _StoryState extends State<Story> {
           )
     ];
 
-    // final List<StoryItem> storyItemss = [
-    //   StoryItem.pageImage(
-    //     url: widget.urls,
-    //     caption: "Hello, from the other side2",
-    //     controller: controller,
-    //   ),
-    //   StoryItem.text(title: 'Happy New Year!!', backgroundColor: Colors.red),
-    // ];
-
     return Scaffold(
       body: StoryView(
         storyItems: storylist,
