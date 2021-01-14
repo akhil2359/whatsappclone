@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
+
 import 'package:image_picker/image_picker.dart';
+import 'package:helloworld/projects/whatsApp/preview.dart';
 
 class EditProfile extends StatelessWidget {
   Widget build(context) {
@@ -59,13 +61,21 @@ class _EditProfileBodyState extends State<EditProfileBody> {
             children: [
               Row(
                 children: [
-                  CircleAvatar(
-                    radius: 30.0,
-                    backgroundColor: primaryColor,
-                    backgroundImage: _image != null
-                        ? FileImage(_image)
-                        : NetworkImage(
-                            'https://www.celebritysecrets.in/images/blog/c1-Gole-Dayakar.jpg'),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (_) {
+                        return Preview(
+                            'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs');
+                      }));
+                    },
+                    child: CircleAvatar(
+                      radius: 30.0,
+                      backgroundColor: primaryColor,
+                      backgroundImage: _image != null
+                          ? FileImage(_image)
+                          : NetworkImage(
+                              'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs'),
+                    ),
                   ),
                   SizedBox(
                     width: 20,

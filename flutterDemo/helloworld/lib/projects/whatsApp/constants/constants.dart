@@ -16,7 +16,7 @@ class Constants {
       'time': '4:21 PM',
       'seen': true,
       'imgurl':
-          'https://www.celebritysecrets.in/images/blog/c1-Gole-Dayakar.jpg'
+          'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs'
     },
     {
       'name': 'Martha Nielsen',

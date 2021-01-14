@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 
 class _ChatsState extends State<Home> {
   // active tab index
-  int activeTabIndex = 0;
+  int activeTabIndex = 3;
 
   List bottomNavigatorOptions = [
     {'label': 'Status', 'method': Status()},

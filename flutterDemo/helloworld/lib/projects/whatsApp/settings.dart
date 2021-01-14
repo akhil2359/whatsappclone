@@ -5,6 +5,7 @@ final primaryColor = Color(0xFF1C1C1E);
 class Settings extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Container(
           color: Colors.black,
@@ -32,7 +33,7 @@ class Settings extends StatelessWidget {
                                   radius: 30.0,
                                   backgroundColor: primaryColor,
                                   backgroundImage: NetworkImage(
-                                      'https://www.celebritysecrets.in/images/blog/c1-Gole-Dayakar.jpg')),
+                                      'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs')),
                               SizedBox(
                                 width: 15,
                               ),
@@ -168,7 +169,7 @@ class CustomSection extends StatelessWidget {
                 child: Row(
                   children: [
                     Container(
-                        padding: EdgeInsets.all(4),
+                        padding: EdgeInsets.all(6),
                         child: Icon(
                           icon,
                           color: Colors.white,
@@ -182,7 +183,7 @@ class CustomSection extends StatelessWidget {
                     Text('$label',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 15,
+                          fontSize: 16,
                         )),
                   ],
                 ),
