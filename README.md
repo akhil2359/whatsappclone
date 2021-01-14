@@ -10,7 +10,7 @@
 6. EDIT PROFILE
 7. IMAGE PREVIEW
 
-**SCREENSHOTS:-**
+**SCREENSHOTS OF APP IN IPHONE 12 (IOS):-**
 
  1. **APP LOGO**
 
@@ -47,4 +47,12 @@
 7. **IMAGE PREVIEW**
 
 ![Screenshot 2021-01-14 at 7 32 57 PM](https://user-images.githubusercontent.com/32734840/104602326-4f97bd80-56a1-11eb-9724-ee33c17cb749.png)
+
+
+**VIDEO OF APP IN OPPO (ANDROID)**
+
+
+https://user-images.githubusercontent.com/32734840/104603532-85897180-56a2-11eb-9712-d5bd3bce15b3.mp4
+
+
 
