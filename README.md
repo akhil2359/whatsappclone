@@ -61,7 +61,7 @@ https://user-images.githubusercontent.com/32734840/104603532-85897180-56a2-11eb-
 
 **APK FILE**
 
-`https://drive.google.com/file/d/1XzFDE7ElIHQQy58RmZrCzt_fRu8bWgSf/view?usp=sharing`
+`https://drive.google.com/file/d/1-4Sm_DinuEx_sqYB-2F1uMVgELSylXGj/view?usp=drivesdk`
 
 
 
