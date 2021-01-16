@@ -216,84 +216,100 @@ class Constants {
   List statusList = [
     {
       'name': 'Sridhar',
+      'profileUrl':
+          'https://images.unsplash.com/photo-1541697277882-d139bbd1d08a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fG1hbGUlMjBpbmRpYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       'imgurl':
           'https://images.unsplash.com/photo-1573393604794-f41cd02f95d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbiUyMG9uJTIwYmVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
-      'time': '1',
+      'time': '4',
       'stories': [
         {
           'type': 'image',
           'value':
               'https://images.unsplash.com/photo-1573393604794-f41cd02f95d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbiUyMG9uJTIwYmVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
           'color': Colors.red,
-          'caption': 'Beach DAY!!'
+          'caption': 'Beach DAY!!',
+          'time': 'Yesterday, 4.10 PM',
         },
         {
           'type': 'text',
           'value': 'Happy new year',
           'color': Colors.blue,
-          'caption': 'Holaa ppl'
+          'caption': 'Holaa ppl',
+          'time': '9:57 AM',
         },
         {
           'type': 'image',
           'value':
               'https://www.treebo.com/blog/wp-content/uploads/2017/05/Things-to-do-in-Goa-at-night_1-1024x683.jpg',
           'color': Colors.red,
-          'caption': 'Night Life in GOA'
+          'caption': 'Night Life in GOA',
+          'time': '10:16 AM',
         }
       ]
     },
     {
       'name': 'Akhil',
+      'profileUrl':
+          'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs',
       'imgurl':
           'https://images.unsplash.com/photo-1473172707857-f9e276582ab6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwbmF0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80',
-      'time': '1',
+      'time': '10',
       'stories': [
         {
           'type': 'image',
           'value':
               'https://images.unsplash.com/photo-1473172707857-f9e276582ab6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwbmF0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80',
           'color': Colors.red,
-          'caption': 'LOVE'
+          'caption': 'LOVE',
+          'time': 'Yesterday, 4.10 PM',
         },
         {
           'type': 'image',
           'value':
               'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZSUyMG5hdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
           'color': Colors.red,
-          'caption': 'YOLO'
+          'caption': 'YOLO',
+          'time': 'Yesterday, 6.28 PM',
         }
       ]
     },
     {
       'name': 'Jhonny',
+      'profileUrl':
+          'https://images.unsplash.com/photo-1547455138-be2c2b333def?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fG1hbGUlMjBpbmRpYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       'imgurl':
           'https://www.popcornoncouch.com/wp-content/uploads/2016/05/cinemaaudience.jpg',
-      'time': '1',
+      'time': '3',
       'stories': [
         {
           'type': 'image',
           'value':
               'https://www.popcornoncouch.com/wp-content/uploads/2016/05/cinemaaudience.jpg',
           'color': Colors.red,
-          'caption': 'Movie time'
+          'caption': 'Movie time',
+          'time': 'Yesterday, 2.43 PM',
         },
         {
           'type': 'image',
           'value':
               'https://media-cdn.tripadvisor.com/media/photo-s/15/b2/57/3e/amb-cinemas.jpg',
           'color': Colors.red,
-          'caption': 'Interval things'
+          'caption': 'Interval things',
+          'time': 'Yesterday, 2.12 PM',
         },
         {
           'type': 'text',
           'value': 'It was a great movie',
           'color': Colors.grey,
-          'caption': 'Holaa ppl'
+          'caption': 'Holaa ppl',
+          'time': 'Yesterday, 1.10 AM',
         },
       ]
     },
     {
       'name': 'Mark bro',
+      'profileUrl':
+          'https://images.unsplash.com/photo-1527340035609-e6e75dc79f53?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fG1hbGUlMjBpbmRpYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       'imgurl':
           'https://cars.usnews.com/pics/size/640x420/static/images/article/202006/128503/216702_New_Volvo_XC40_-_exterior_640x420.jpg',
       'time': '1',
@@ -303,25 +319,30 @@ class Constants {
           'value':
               'https://cars.usnews.com/pics/size/640x420/static/images/article/202006/128503/216702_New_Volvo_XC40_-_exterior_640x420.jpg',
           'color': Colors.red,
-          'caption': 'Love this'
+          'caption': 'Love this',
+          'time': 'Just Now',
         },
         {
           'type': 'image',
           'value':
               'https://carinmylife.com/wp-content/uploads/2020/07/cautofotoToyota-Corolla-Skoda-Octavia-twin-test-2-678x381.jpg',
           'color': Colors.red,
-          'caption': 'Ride day'
+          'caption': 'Ride day',
+          'time': 'Yesterday, 6.10 PM',
         },
         {
           'type': 'text',
           'value': 'Had a great day',
           'color': Colors.pink,
-          'caption': 'Holaa ppl'
+          'caption': 'Holaa ppl',
+          'time': 'Yesterday, 2.13 PM',
         }
       ]
     },
     {
       'name': 'Jonas',
+      'profileUrl':
+          'https://images.unsplash.com/photo-1514481422339-db621c1fca86?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60g',
       'imgurl':
           'https://www.india.com/wp-content/uploads/2018/08/Bangalore-Airport-haunted-1.jpg',
       'time': '1',
@@ -331,20 +352,23 @@ class Constants {
           'value':
               'https://www.india.com/wp-content/uploads/2018/08/Bangalore-Airport-haunted-1.jpg',
           'color': Colors.red,
-          'caption': 'Hi Bangalore'
+          'caption': 'Hi Bangalore',
+          'time': 'Just Now',
         },
         {
           'type': 'image',
           'value':
               'https://i.pinimg.com/originals/01/00/17/0100171c77b82915b9b0f691f7b61005.jpg',
           'color': Colors.red,
-          'caption': 'Off to Cochi'
+          'caption': 'Off to Cochi',
+          'time': 'Yesterday, 6.10 PM',
         },
         {
           'type': 'text',
           'value': 'Reached',
           'color': Colors.black,
-          'caption': ''
+          'caption': '',
+          'time': 'Yesterday, 6.50 PM',
         }
       ]
     }

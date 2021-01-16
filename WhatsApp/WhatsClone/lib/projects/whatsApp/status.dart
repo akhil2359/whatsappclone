@@ -32,7 +32,7 @@ class Status extends StatelessWidget {
                 children: [
                   for (var item in statusList)
                     StatusItem(item['name'], item['time'], item['imgurl'],
-                        item['stories'])
+                        item['stories'], item['profileUrl'])
                 ],
               ),
             ),
@@ -142,13 +142,14 @@ class StatusItem extends StatelessWidget {
   final String time;
   final String imgurl;
   final List stories;
-  StatusItem(this.name, this.time, this.imgurl, this.stories);
+  final String profileUrl;
+  StatusItem(this.name, this.time, this.imgurl, this.stories, this.profileUrl);
 
   Widget build(context) {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (_) {
-          return Story(stories);
+          return Story(stories, name, profileUrl);
         }));
       },
       child: Column(
@@ -160,9 +161,13 @@ class StatusItem extends StatelessWidget {
             child: Row(
               children: [
                 CircleAvatar(
-                    radius: 25.0,
-                    backgroundColor: primaryColor,
-                    backgroundImage: NetworkImage('$imgurl')),
+                  radius: 27.0,
+                  backgroundColor: Color(0xFFF585858),
+                  child: CircleAvatar(
+                      radius: 25.0,
+                      backgroundColor: primaryColor,
+                      backgroundImage: NetworkImage('$imgurl')),
+                ),
                 SizedBox(
                   width: 15,
                 ),
