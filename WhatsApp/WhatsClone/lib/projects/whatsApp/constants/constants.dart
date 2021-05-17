@@ -16,7 +16,7 @@ class Constants {
       'time': '4:21 PM',
       'seen': true,
       'imgurl':
-          'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs'
+          'https://images.hdqwalls.com/download/iron-man-drinking-coffee-ne-2932x2932.jpg'
     },
     {
       'name': 'Martha Nielsen',
@@ -250,7 +250,7 @@ class Constants {
     {
       'name': 'Akhil',
       'profileUrl':
-          'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs',
+          'https://images.hdqwalls.com/download/iron-man-drinking-coffee-ne-2932x2932.jpg',
       'imgurl':
           'https://images.unsplash.com/photo-1473172707857-f9e276582ab6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwbmF0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80',
       'time': '10',

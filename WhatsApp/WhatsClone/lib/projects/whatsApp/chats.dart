@@ -1,3 +1,4 @@
+import 'package:WhatsClone/projects/whatsApp/chatscreen.dart';
 import 'package:flutter/material.dart';
 import 'constants/constants.dart';
 
@@ -35,6 +36,13 @@ class ChatsContainer extends StatelessWidget {
                     child: Column(
                       children: [
                         ListTile(
+                          onTap: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (_) {
+                              return ChatScreen('${chatList[index]['imgurl']}',
+                                  '${chatList[index]['name']}');
+                            }));
+                          },
                           leading: GestureDetector(
                             onTap: () {
                               Navigator.push(context,
@@ -43,7 +51,7 @@ class ChatsContainer extends StatelessWidget {
                               }));
                             },
                             child: CircleAvatar(
-                              backgroundColor: Colors.black,
+                              backgroundColor: Colors.grey,
                               radius: 30,
                               backgroundImage:
                                   NetworkImage('${chatList[index]['imgurl']}'),

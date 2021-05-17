@@ -10,7 +10,7 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2),
+    Timer(Duration(seconds: 0),
         () => Navigator.pushReplacementNamed(context, '/home'));
   }
 

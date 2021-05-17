@@ -65,7 +65,7 @@ class _EditProfileBodyState extends State<EditProfileBody> {
                     onTap: () {
                       Navigator.push(context, MaterialPageRoute(builder: (_) {
                         return Preview(
-                            'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs');
+                            'https://images.hdqwalls.com/download/iron-man-drinking-coffee-ne-2932x2932.jpg');
                       }));
                     },
                     child: CircleAvatar(
@@ -74,7 +74,7 @@ class _EditProfileBodyState extends State<EditProfileBody> {
                       backgroundImage: _image != null
                           ? FileImage(_image)
                           : NetworkImage(
-                              'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs'),
+                              'https://images.hdqwalls.com/download/iron-man-drinking-coffee-ne-2932x2932.jpg'),
                     ),
                   ),
                   SizedBox(

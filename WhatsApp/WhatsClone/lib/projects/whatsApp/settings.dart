@@ -33,7 +33,7 @@ class Settings extends StatelessWidget {
                                   radius: 30.0,
                                   backgroundColor: primaryColor,
                                   backgroundImage: NetworkImage(
-                                      'https://media-exp1.licdn.com/dms/image/C5103AQEQcaUz7Rb4rw/profile-displayphoto-shrink_200_200/0/1585075769906?e=1616025600&v=beta&t=59SFfWmdVIiTDXW564ecGgnegAZGbw-9VRFqael-sRs')),
+                                      'https://images.hdqwalls.com/download/iron-man-drinking-coffee-ne-2932x2932.jpg')),
                               SizedBox(
                                 width: 15,
                               ),

@@ -9,12 +9,17 @@ class Preview extends StatefulWidget {
 }
 
 class _PreviewState extends State<Preview> {
+  final secondaryColor = Color(0xFFF25A9FA);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
+        iconTheme: IconThemeData(
+          color: secondaryColor,
+        ),
         title: Text('Contact Info'),
         centerTitle: true,
       ),
