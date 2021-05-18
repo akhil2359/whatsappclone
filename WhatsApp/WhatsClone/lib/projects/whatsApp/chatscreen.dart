@@ -112,9 +112,9 @@ class ChatScreen extends StatelessWidget {
 
 class Chats extends StatelessWidget {
   final chats = [
-    {'recepient': true, 'text': 'Hi bro'},
+    {'recepient': true, 'text': 'Hi there'},
     {'recepient': false, 'text': 'Hello'},
-    {'recepient': true, 'text': 'God Morning, what are you doing!'},
+    {'recepient': true, 'text': 'Good Morning'},
     {'recepient': false, 'text': 'Mrng, Just woke up'},
     {'recepient': false, 'text': 'Are you done with project?'},
     {
@@ -125,7 +125,7 @@ class Chats extends StatelessWidget {
     {
       'recepient': false,
       'text':
-          'Been waiting for so long, where have you been bro, are you cmng trmw',
+          'Been waiting for so long, where have you been, are you cmng trmw',
       'seen': true,
     }
   ];
@@ -145,7 +145,6 @@ class Chats extends StatelessWidget {
               Expanded(
                 flex: 7,
                 child: Container(
-                  width: 10,
                   decoration: BoxDecoration(
                       color: chats[index]['recepient']
                           ? primaryColor

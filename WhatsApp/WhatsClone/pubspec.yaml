@@ -24,7 +24,6 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.12.2
-  bubble: ^1.2.1
   camera:
   image_picker:
   story_view:
